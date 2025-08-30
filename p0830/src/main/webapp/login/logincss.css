@@ -1,0 +1,163 @@
+@charset "UTF-8";
+table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px;
+            display:block;
+
+        }
+        
+td {
+    border: 1px solid #ffffff;
+    height: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    
+}
+ td:first-child {
+            width: 30%; /* 첫 번째 열은 30% 너비 */
+}
+td:nth-child(2){
+    text-align: left; /* 두 번째 열은 왼쪽 정렬 */
+}
+        
+textarea {
+            width: 100%;
+            height: 100px;
+            resize: none; /* 크기 조절 비활성화 */
+        }
+body{
+    justify-content: center;
+    align-items:center;
+}
+div{
+	display:inline-block;
+    justify-content: center;
+}
+#yeartext {
+    width: 80px; /* 년도 입력 필드의 너비 */
+}
+#member_post{
+    width: 75px; /* 우편번호 입력 필드의 너비 */
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: #ffffff solid 1px;
+    display: inline-block;
+}
+#member_addr{
+    width: 300px; /* 주소 입력 필드의 너비 */
+    
+}
+#addressbutton{
+    border: #ffffff solid 1px;
+    width: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    height: 20px;
+    margin-left: 10px;
+    display: inline-block;
+
+
+}
+#memberbox{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+#numberic_pre{
+    width: 70px;
+    text-align: center;
+}
+#numberic_last{
+    width: 80px;
+    text-align: center;
+}
+#yeartext{
+    width: 40px;
+    text-align: center;
+}
+.birth{
+    width: 20px;
+    text-align: center;
+}
+.birthbox{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 5px;
+}
+.hlabel{
+    display:inline-block; padding:8px 12px; cursor:pointer;
+
+    border:1px solid #ffffff;
+    margin-bottom:4px;
+    border-radius:4px;
+    user-select:none;
+    
+}
+.hobbybox{
+    overflow: hidden;
+}
+.hobbybox+ .hlabel  {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 10px;
+    user-select: none;
+}
+input[class="check"] + label{
+    display: inline-block;
+    width: 18px;
+	height: 18px;
+	border: 1px solid #bcbcbc;
+	cursor: pointer;
+}
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.dongle-regular {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+body{
+    font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  font-style: normal;
+  background-color: white;
+
+}
+td{
+    background: #E8CBC0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #636FA4, #E8CBC0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #636FA4, #E8CBC0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+input{
+    border-color: white;
+}
+textarea{
+    border-color: white;
+}
+.buttoncss{
+    margin: 20px;
+    border: white;
+    background-color:#8292d8;
+    border-radius: 10px;
+    padding: 5px 10px;
+	height: 30px;
+	align-items:center;
+}
