@@ -10,6 +10,7 @@ public class User {
 	private String hnumber;
 	private String addr;
 	private String addrnumber;
+	private String Auth;
 	public String getAddrnumber() {
 		return addrnumber;
 	}
@@ -65,4 +66,11 @@ public class User {
 	public void setIntro(String intro) {
 		this.intro = intro;
 	}
+	public String getAuth() {
+		return Auth;
+	}
+	public void setAuth(String auth) {
+		Auth = auth;
+	}
+	
 }

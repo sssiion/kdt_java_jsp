@@ -9,6 +9,7 @@ import javax.servlet.http.HttpSession;
 import net.user.db.UserDAO;
 import net.board.action.Action;
 import net.board.action.ActionForward;
+import net.user.db.User;
 import net.user.db.UserBean;
 
 public class LoginAction implements Action {
@@ -25,12 +26,12 @@ public class LoginAction implements Action {
         
         if(loginResult == 1) {
             // 로그인 성공
-            UserBean user = userDao.getUserInfo(id);
+            User user = userDao.getUserInfo(id);
             HttpSession session = request.getSession();
             
             session.setAttribute("id", user.getId());
             session.setAttribute("name", user.getName());
-            session.setAttribute("auth", user.isAuth());
+            session.setAttribute("auth", user.getAuth());
             session.setAttribute("userNumber", user.getNumber());
             session.setAttribute("intro", user.getIntro());
             session.setAttribute("addr", user.getAddrnumber());

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.user.db.UserDAO;
 import net.board.action.Action;
 import net.board.action.ActionForward;
+import net.user.db.User;
 import net.user.db.UserBean;
 
 public class JoinAction implements Action {
@@ -27,7 +28,7 @@ public class JoinAction implements Action {
         String email = request.getParameter("email_pre") + "@" + request.getParameter("email_last");
         
         UserDAO userDao = new UserDAO();
-        UserBean user = new UserBean();
+        User user = new User();
         
         // 아이디 중복 체크
         if(userDao.isUserIdExist(id)) {
@@ -49,7 +50,6 @@ public class JoinAction implements Action {
         user.setName(name);
         user.setAddrnumber(addr);
         user.setEmail(email);
-        
         boolean result = userDao.userInsert(user);
         
         if(result) {

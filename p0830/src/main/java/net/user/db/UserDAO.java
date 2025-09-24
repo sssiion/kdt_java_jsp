@@ -66,7 +66,7 @@ public class UserDAO {
         String sql = "SELECT Pw, auth, userNumber, intro, addr, Name, email FROM login WHERE Id = ?";
         int result = -1; // -1: 아이디 없음, 0: 비밀번호 틀림, 1: 로그인 성공
         
-        try {
+        try {   
             con = ds.getConnection();
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, id);
@@ -278,4 +278,9 @@ public class UserDAO {
             }
         }
     }
+
+	public List<UserBean> getMemberList(int page, int limit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
